@@ -1,0 +1,556 @@
+/* THEME OPTIONS ************************** */
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	max-width: 100%;
+}
+/* GLOBAL ********************************* */
+
+/* ----- Body ------------------------ */
+body {
+	color:#444;
+	font-family: 'Exo', sans-serif;
+	font-size: 20px;
+	margin:0;
+}
+/* ----- Custom Fonts ---------------- */
+/* ----- Text ------------------------ */
+h1,h2,h3 {
+	font-family: 'Advent Pro', sans-serif;
+	font-weight: 100;
+}
+em,
+a,
+a.icon,
+a.icon:hover,
+a.icon:focus {
+	color:orange;
+}
+blockquote > em {
+	color:purple;
+	display: block;
+}
+blockquote::before {
+    content: "\201C";
+    font-size: 45px;
+    font-weight: bold;
+    color: #999;
+    position: absolute;
+	left: 5px;
+    top: 0px;
+}
+/* ----- Links ----------------------- */
+a {
+	text-decoration:none;
+}
+a:hover {
+	opacity:.4;
+}
+/* ----- Lists ----------------------- */
+/* ----- Tables ---------------------- */
+/* ----- Forms ----------------------- */
+select, textarea, input[type="text"], input[type="password"],
+input[type="datetime"], input[type="datetime-local"],
+input[type="date"], input[type="month"], input[type="time"],
+input[type="week"], input[type="number"], input[type="email"],
+input[type="url"], input[type="search"], input[type="tel"],
+input[type="color"], .uneditable-input {height:2.5em;}
+
+
+/* HEADER ********************************* */
+/* ----- Header Region --------------- */
+header {
+	position: relative;	
+	background-color: #000;
+}
+header div.wrap {
+	background-image: url(head.jpg);
+	background-position: 15% 40%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 666px;
+	overflow: hidden;
+}
+header .overlayz {
+	background-color: rgba(255,255,255,.95);
+}
+/* ----- Logo ------------------------ */
+.brand {
+	position: absolute;
+	top: 20%;
+	left: 0;
+	right: 0;
+}
+.brand img {
+	max-width:1400px;
+	width:100%;
+}
+.brand h2 {
+	color: #475a77;
+	color: #fff;
+	font-size: 40px;
+	padding: 35px 25px;
+	text-shadow: 1px 2px 2px black;
+}
+span.logo {
+	display: none;
+	text-indent:-9999px;
+}
+span.site-name.logo {
+	background-image: url(dialogo.svg);
+	background-image: url(dialogo.png);
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	font-size:30px;
+	height: 210px;
+    text-align: center;
+    z-index: 555;
+}
+/***** nav **********/
+header > nav.sticky {
+	background: rgba(0,0,0,.4);
+	box-shadow: 2px 2px 10px black;
+	position: fixed;
+}
+nav.sticky {
+	transform: scale(1.1);
+	-ms-transition: all 1000ms;
+	-moz-transition: all 1000ms;
+	-webkit-transition: all 1000ms;
+	transition: all 1000ms;
+	transition-timing-function: ease;	
+}
+header > nav {
+	left: 0;
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 444;
+}
+nav ul {
+	padding: 0;
+	margin: 0;
+}
+ul {
+	-webkit-margin-before: 0;
+	-webkit-margin-after: 0;
+	-webkit-padding-start: 0;
+}
+nav ul {
+	display:flex;
+	justify-content:space-evenly;
+	list-style:none;
+	width: 100%;
+}
+nav ul li {
+	list-style:none;
+	position:relative;
+	width: 100%;
+}
+header nav ul li:first-of-type:after {
+	content:'';
+}
+header nav ul li:afterr {
+	content:'';
+	color: orange;
+	position: absolute;
+	top: 8px;
+}
+header nav ul li a {
+background-color: rgba(130, 130, 130, 0.65);
+	font-size: 21px;
+	line-height: 21px;
+}
+nav ul li a {
+	color:#fff;
+	font-family: 'Advent Pro', sans-serif;
+	display:block;
+	padding: 10px 0;
+	text-align: center;
+}
+header nav ul li a:hover,
+header nav ul li a:focus,
+header nav ul li a.active {
+	background-color: rgba(239, 239, 239,0.66);
+	background-image:url(key.svg);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 35%;
+	opacity: 1;
+	text-shadow: 0px 2px 3px #888;
+	text-indent:-9999px;
+}
+/*   2, 5, 8 ***/
+header nav ul li:nth-child(3n-1) a:hover,
+header nav ul li:nth-child(3n-1) a:focus,
+header nav ul li:nth-child(3n-1) a:active {
+	background-image:url(maze2.svg);
+	background-size: 8%;
+}
+/*   3, 6, 9 ***/
+header nav ul li:nth-child(3n) a:hover,
+header nav ul li:nth-child(3n) a:focus,
+header nav ul li:nth-child(3n) a:active {
+	background-image:url(keys.svg);
+}
+
+a.icon,
+a.icon:hover,
+a.icon:focus {
+    margin: 0 auto;
+}
+/***** containers **********/
+body > * {
+	clear:both;
+}
+main {
+	background-color: #000;
+}
+.area {
+	margin:0 auto;
+	max-width: 710px;
+	opacity:0;
+}
+section  {
+    clear: both;
+	display:flex;
+	justify-content: center;
+	flex-direction: column;
+	min-height: 550px;
+    position: relative;
+}
+section.aletheia {
+	background-attachment:fixed;
+	background-position: 50% 0%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	color:white;
+    padding: 25px 10px;
+    height:auto;
+	min-height: 75vh;
+    position: relative;
+}
+section.aletheia .area {
+	background-color: rgba(0,0,0,.3);
+	border: 5px solid rgba(0, 0, 0, .15);
+}
+section.pics {
+	flex-direction:row;
+	flex-wrap: wrap;
+	min-height:auto;
+}
+section#nostrum {
+	min-height: 65vh;
+	padding: 30px 0;
+	text-align: center;
+}
+section.aletheia {
+	padding: 45px 10px;
+}
+section.pics img {}
+
+
+/***** helpers **********/
+.hidden {
+	display: none!important;
+	visibility: hidden!important;
+	opacity: 0;
+}
+.anchor {
+	display:block;
+	padding-top:5px;
+}
+.overlay {
+background-color: rgba(0,0,0,.4);	
+	height:100%;
+	width: 100%;
+}
+.icon.facebook {
+	display: block;
+	background-image: url(facebook.svg);
+	background-position: 0% 50%;
+	background-repeat: no-repeat;
+	height:16px;
+	width:16px;
+}
+.icon.instagram {
+	display: block;
+	background-image: url(instagram.svg);
+	background-position: 0% 50%;
+	background-repeat: no-repeat;
+	height:21px;
+	width:21px;
+}
+
+.icon.bandcamp {
+	background-image: url(bandcamp.svg);
+	background-position: 0% 50%;
+	background-repeat: no-repeat;
+	display: block;
+	height: 55px;
+    width: 55px;
+}
+.arrow-up {
+    border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-bottom: 10px solid #6fa5ff;
+    display: block;
+	height: 20px;
+	padding: 0;
+	position: fixed;
+	bottom: 60px;
+	right: 21px;
+	width: 20px;
+	z-index:666;
+}
+
+/***** content **********/
+iframe {
+	display:block;
+	margin: 0 auto 20px auto;
+	border;2px solid black;width:500px;height:200px;
+}
+img.artwork {
+	display:block;
+	max-width: 335px;
+	margin:0 auto;
+	width: 100%;
+}
+.artwork img {
+	margin: 25px auto 15px auto;
+    display: block;
+}
+h2.out-now {
+	align-items: center;
+    color: #354a61;
+		display: flex;
+	justify-content: center;
+	font-size: 34px;
+	font-weight:800;
+    letter-spacing: 10px;
+	margin: 40px 0 0  0;
+}
+
+h2.out-now::before {
+	margin-right: 20px;
+}
+h2.out-now::after {
+	margin-left:10px;
+}
+h2.out-now::after,
+h2.out-now::before {
+	content:'';
+	background-color:#1c1c1c;
+	height:1px;
+	width:60px;
+}
+h3.out-now {
+	color: white;
+	font-size: 27px;
+	margin: 0 0 25px 0;
+	text-align: center;
+}
+.b-old-lazy, video{
+	display:inline-block;
+	position:absolute;
+	left:0;
+	top:0;
+	height:100%;
+	width:100%;
+}
+.b-loaded {
+	background-repeat: no-repeat;
+}
+    .b-lazy {
+        -webkit-transition: opacity 500ms ease-in-out;
+           -moz-transition: opacity 500ms ease-in-out;
+             -o-transition: opacity 500ms ease-in-out;
+                transition: opacity 500ms ease-in-out;
+                 max-width: 100%;
+                   opacity: 0;
+    }
+    .b-lazy.b-loaded {
+                   opacity: 1;
+    }
+
+blockquote {	
+    -webkit-margin-start: 5px;
+    -webkit-margin-end: 5px;
+	background: #f9f9f9;
+	border-left:4px solid #eee;
+	font-family: 'Advent Pro', sans-serif;
+    line-height: 1.25;
+	padding:10px 0 10px 25px;
+    position: relative;
+}
+/***** footer **********/
+footer {
+	align-items: center;
+	background-color: rgb(19, 17, 22);
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	height: 50vh;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-bottom: 40px;
+	position: relative;
+	justify-content: flex-end;
+	z-index: 333;
+}
+footer p {
+	color: white;
+	max-width:450px;
+	margin: 0 auto;
+	text-align:center;
+}
+footer nav {
+    display: flex;
+    align-items: flex-end;
+    height: 50%;
+	padding-bottom:40px;
+}
+
+footer .wrap {
+	background-image: url(faces-lower-bottom.png);
+	background-position: 0% 50%;
+	background-repeat: no-repeat;
+	bottom: 0;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	z-index: -1;
+}
+footer .overlay {
+	background-color: rgba(19, 17, 22, .5);
+}
+footer nav ul {
+	margin: 0 auto;
+	width: 260px;
+}
+footer nav ul li {
+display: flex;
+align-items: center;
+}
+footer nav ul li a.fa {
+	display:block;
+}
+/***** animations **********/
+.b-lazy.animate{
+	opacity:0;
+	-ms-transform: scale(3);
+	-moz-transform: scale(3);
+	-webkit-transform: scale(3);
+	transform: scale(3);
+	-ms-transition: all 1200ms;
+	-moz-transition: all 1200ms;
+	-webkit-transition: all 1200ms;
+	transition: all 500ms;
+}
+.b-loaded.animate {
+	opacity:1;
+	-ms-transform: scale(1);
+	-moz-transform: scale(1);
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+html.ua-chrome header .blur {
+	-webkit-animation: blur 5s infinite;
+}
+html.ua-safari header .blur,
+html.ua-firefox header .blur {	
+	animation-duration: 5s;
+	animation-name: ffblur;
+	animation-iteration-count: infinite;
+}
+
+html.ua-chrome footer .blur {
+	-webkit-animation: blur 10s infinite;
+}
+html.ua-safari footer .blur,
+html.ua-firefox footer .blur {	
+	animation-duration: 10s;
+	animation-name: ffblur;
+	animation-iteration-count: infinite;
+}
+@-webkit-keyframes blur {
+	0%, 100%  { -webkit-filter: blur(0px); }
+	50% { -webkit-filter: blur(12px); }
+}
+@keyframes ffblur {
+	0%, 100%  {
+		filter: blur(0px);
+	}	
+	50% {
+		filter: blur(9px);
+	}
+}
+/***** Extra small devices (portrait phones, less than 544px)  **********/
+@media (max-width: 543px) {
+	.area {
+	    padding: 55px 20px;
+	}
+}
+/***** Small devices and up **********/
+@media (min-width: 544px) {
+	header div.wrap {
+		background-position: 0% 40%;
+	}
+	.area  {
+	    padding: 60px 25px;
+	}
+	section.pics img {
+		flex-basis: calc(100%/2);
+	}
+	footer .wrap {
+		background-size: cover;
+	}
+}
+
+/*****  overrides for **********/
+/*****  Medium devices (tablets and up) **********/
+@media (min-width: 768px) {
+	header div.wrap {
+		height:100vh;
+	}
+	section.pics img {
+		flex-basis: calc(100%/3);
+	}
+	.artwork {
+		align-items:center;
+		display:flex;
+		justify-content: space-between;
+	}
+	.artwork img {
+		margin: 0;
+	}
+	.arrow-up {
+		right: 60px;
+	}
+}
+/*****  overrides for **********/
+/*****  larger devices (desktops and up) **********/
+@media (min-width: 768px) {	
+	section#nostrum div {
+		align-items: center;
+		display:flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+	}
+	section.aletheia {
+		padding: 125px 10px;
+	}
+	iframe {
+		margin: 0 20px 0 0;
+	}
+	img.artwork {
+		max-width: 380px;
+	}
+	header nav ul li a:hover,
+	header nav ul li a:focus,
+	header nav ul li a.active {
+		background-size: 10%;
+	}
+
+}

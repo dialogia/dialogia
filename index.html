@@ -1,0 +1,170 @@
+<html>
+<head>
+<meta charset="utf-8"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="jquery.inview.js"></script>
+<script>
+$(document).ready(function(){
+	$('header nav ul li:last-of-type aa').addClass("active");
+
+	$('ul li a').click(function(){
+		$('li a').removeClass("active");
+		$(this).addClass("active");
+	});
+	// old scroll animate
+  $('a[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top - 20
+        }, 1000);
+        return false;
+      }
+    }
+  });
+	
+	// sticky nav
+	$(window).scroll(function(){
+	  var sticky = $('header nav'),
+		  scroll = $(window).scrollTop();
+
+	  if (scroll >= 250) sticky.addClass('sticky');
+	  else sticky.removeClass('sticky');
+	});
+	// end sticky nav
+});
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="dialogia.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Advent+Pro:100,600|Exo" rel="stylesheet">
+
+
+<link rel="canonical" href="https://www.dialogia.info" />
+<meta name="Title" content="Nostrum">
+<meta property="og:title" content="Dialogia - Nostrum"/>
+<meta property="og:url" content="https://www.dialogia.info">
+<meta property="og:description" content="Dialogia's Official Home for Sleep-Deprived Darkness">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Dialogia - Nostrum"/>
+
+<script src="cssua.min.js" type="text/javascript"></script>
+
+  <title>Dialogia - Nostrum</title>
+</head>
+<body>
+<header id="header" role="banner">
+	<nav>
+		<ul>
+			<li><a href="#nostrum">listen</a></li>
+			<li><a href="#aletheia">discover</a></li>
+			<li><a href="#top">top</a></li>
+		</ul>
+	</nav>
+<a name="top"></a>	
+<div class="wrap blur">
+	<div class="overlay"></div>
+</div>
+	<div class="brand" style="text-align:center;">
+		<img src="dialogo.svg">
+		<span class="site-name hidden logo">DIALOGIA</span>
+		<h2 class="area">Sleep-Deprived Dark Craft</h2>
+	</div>
+</header>
+<main role="main">
+  <a class="anchor" name="nostrum"></a>
+	<section id="nostrum" class="nostrum ">
+		<h2 class="out-now">NOSTRUM</h2>
+		<h3 class="out-now">OUT NOW</h3>
+		<div class="listen">
+			<iframe style="border: 0; width: 300px; height: 378px;" src="https://bandcamp.com/EmbeddedPlayer/album=1838453191/size=large/bgcol=333333/linkcol=ffffff/artwork=small/transparent=true/" seamless></iframe>
+			<img class="artwork" src="artwork.png" title="Album artwork" alt="Dialogia's debut album">
+		</div>
+		<p>Nostrum sonically depicts our protagonist's ordinary human turbulence as he navigates a conundrum of complex conditions during a particularly chaotic age upon the Earth.</p> 
+
+		<a class="icon bandcamp" href="http://bandcamp.com"></a>
+	</section>
+	
+	<section id="aletheia" class="aletheia b-lazy"  data-src="aletheia.jpg">
+		<div class="area">
+		<p>Dialogia's debut album unweaves a new collection of ciphers, gathering a disparate cast of musicians (some well-known, some of them ciphers, themselves) to urge you to join us in crossing the threshold of shadows into the ether.</p>
+		<p>Nostrum entices the listener to traverse soaring skeletal voids into a world that wails, filled with anguished throats, silvery choirs of deceptively innocent song, and the seismic shudders of voices that were never meant to be known.</p>
+		<p>These exotic surroundings range from serene, disembodied soundscape to a vicious percussive maelstrom, from stagnant shadowy waters to the harsh judgment of breathing stone...but may feel hauntingly familiar to a select stratum. </p>
+		<p>A very limited run of 100 shirts will be pressed to celebrate this release.</p>
+		<p class="punchline">DRINK THE NECTAR....<br>
+		COME EXPLORE THE NOXIOUS</p>
+		</div>
+	</section>
+	
+	<section id="nostrum1" class="area hidden nostrum">
+
+	</section>
+
+<section id="pics" class="pics">
+	<img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="gallery/nogz2.jpg" title="Alejandro Nogales recording guitars" alt="Nogales recording guitars">
+	<img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="gallery/jasper4.jpg" title="Jasper Barendregt drum recordings 2017" alt="drum recordings in Tilburg, NL" >
+	<img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="gallery/snos.jpg" title="snos sound" alt="snos sound">
+	<img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="gallery/jasper1.jpg" title="Jasper Barendregt drum recordings - Tilburg, NL" alt="Jasper Barendregt drum recordings">
+	<img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="gallery/guitars.jpg" title="Nogales recording guitars" alt="Nogales recording guitars">	
+	<img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="gallery/jasper2.jpg" title="Jasper Barendregt drum recordings 2017" alt="Jasper drum recordings in Tilburg, NL">
+	<img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="gallery/jasper6.jpg" title="drum recordings in Tilburg, NL" alt="Jasper Barendregt drum recordings">
+	<img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="gallery/jasper3.jpg" title="Barendregt drum recordings" alt="Jasper Barendregt drum recordings in Tilburg, NL" >
+	<img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="gallery/jasper5.jpg" title="Jasper Barendregt drum recordings in Tilburg, NL" alt="Barendregt drum recordings">
+	<img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="gallery/samantha.jpg" title="Samantha Hegre performing Cello on Unlocked" alt="Samantha Hegre Cello recorings">
+	<img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="gallery/barre.jpg" title="Barre Gambling reviews Stratagem guitar solo" alt="Barre Gambling reviews guitar solo">
+	<img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="gallery/zetterberg3.jpg" title="Johannes Zetterberg bass" alt="Johannes Zetterberg bass">
+	<img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="gallery/grigoryeva.jpg" title="Maria Grigoryeva performing Viola on Unlocked" alt="Maria Grigoryeva">
+	<img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="gallery/setup.jpg" title="James Healy at Old Town Lutherie" alt="James Healy at Old Town Lutherie">	
+	<img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="gallery/gina.jpg" title="Gina Ellen performs the voice of Aletheia" alt="Gina Ellen as the voice of Aletheia">
+		<img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="gallery/guthrie2.jpg" title="Guthrie Iddings guest vocals" alt="Guthrie Iddings">
+	<img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="gallery/ostinato.jpg" title="Performing Ostinato on Conundrum" alt="Performing Ostinato on Conundrum">
+	<img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="gallery/ravelledelux.jpg" title="Fernandes Ravelle Deluxe" alt="Fernandes Ravelle Deluxe">
+	<img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="gallery/zetterberg2.jpg" title="Johannes Zetterberg fretless bass" alt="Johannes Zetterberg fretless bass">
+	<img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="gallery/koelble2.jpg" title="Bobby Koelble guitar solo FBRE" alt="Bobby Koelble guitar solo FBRE">
+	<img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="gallery/dasha.jpg" title="Dasha Pliska hand designs" alt="all album art by Dasha Pliska">
+	<img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="gallery/guthrie.jpg" title="Guthrie Iddings guest vocals" alt="Guthrie Iddings">
+	<img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="gallery/sings2017.jpg" title="adding choir layers" alt="adding choir layers">
+	<img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="gallery/choirdemo.jpg" title="Demoing the choir on Conundrum" alt="Demoing the choir on Conundrum">	
+	<img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="gallery/bass0.jpg" title="" alt="">
+	<img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="gallery/2018-11.jpg" title="boozed 2018" alt="boozed 2018">
+	<img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="gallery/beer.jpg" title="" alt="">
+</section>
+
+</main>
+<footer role="footer">
+	<div class="wrap blur">
+		<div class="overlay"></div>
+	</div>
+		<p>If you like these aesthetics, please consider supporting this effort by purchasing a shirt or download.</p>
+		<nav>
+		<ul>
+			<li><a class="icon bandcamp" href="http://bandcamp.com"></a></li>
+			<li><a class="icon instagram" href="http://instagram.com"></a></li>
+		</ul>
+	</nav>
+</footer>
+	<a href="#header" class="arrow-up"></a>
+  <script>
+    $('.area, .area2').bind('inview', function(event, visible) {
+      if (visible) {
+        $(this).stop().fadeTo(1200,1);
+      } else {
+        $(this).stop().fadeTo(700,0);
+      }
+    });
+  </script>
+<script src="https://cdn.jsdelivr.net/blazy/latest/blazy.min.js"></script>
+
+    <script>
+        (function() {
+            // Initialize
+           var blazy = new Blazy({
+	container: '.pics'
+    });
+        })();
+    </script>
+
+
+</body>
+</html>
