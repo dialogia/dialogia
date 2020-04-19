@@ -512,7 +512,7 @@ html.ua-firefox footer .blur {
 /*****  Medium devices (tablets and up) **********/
 @media (min-width: 768px) {
 	header div.wrap {
-		height:100vh;
+		height:75vh;
 	}
 	section.pics img {
 		flex-basis: calc(100%/3);
@@ -552,5 +552,8 @@ html.ua-firefox footer .blur {
 	header nav ul li a.active {
 		background-size: 10%;
 	}
+}
+/***** massive **********/
+@media (min-width: 1200px) {
 
 }
