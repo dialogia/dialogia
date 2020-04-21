@@ -10,7 +10,7 @@
 /* ----- Body ------------------------ */
 body {
 	color:#444;
-	font-family: 'Exo', sans-serif;
+	font-family: 'Exo', sans-serif;s
 	font-size: 20px;
 	margin:0;
 }
@@ -99,7 +99,7 @@ span.logo {
 }
 span.site-name.logo {
 	background-image: url(dialogo.svg);
-	background-image: url(dialogo.png);
+	background-image: url(dialogo.jpg);
 	background-position: 50% 50%;
 	background-repeat: no-repeat;
 	font-size:30px;
@@ -413,7 +413,7 @@ footer nav {
 }
 
 footer .wrap {
-	background-image: url(faces-lower-bottom.png);
+	background-image: url(faces-lower-bottom.jpg);
 	background-position: 0% 50%;
 	background-repeat: no-repeat;
 	bottom: 0;
