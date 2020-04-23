@@ -491,6 +491,9 @@ html.ua-firefox footer .blur {
 	.area {
 	    padding: 55px 20px;
 	}
+	.brand span {
+		display:block;
+	}
 }
 /***** Small devices and up **********/
 @media (min-width: 544px) {
@@ -512,7 +515,7 @@ html.ua-firefox footer .blur {
 /*****  Medium devices (tablets and up) **********/
 @media (min-width: 768px) {
 	header div.wrap {
-		height:75vh;
+		height:80vh;
 	}
 	section.pics img {
 		flex-basis: calc(100%/3);
