@@ -186,7 +186,6 @@ header nav ul li:nth-child(3n-1) a:hover,
 header nav ul li:nth-child(3n-1) a:focus,
 header nav ul li:nth-child(3n-1) a:active {
 	background-image:url(maze2.svg);
-	background-size: 8%;
 }
 /*   3, 6, 9 ***/
 header nav ul li:nth-child(3n) a:hover,
@@ -234,6 +233,7 @@ section.aletheia {
 section.aletheia .area {
 	background-color: rgba(0,0,0,.3);
 	border: 5px solid rgba(0, 0, 0, .15);
+	max-width: 616px;
 }
 section.pics {
 	flex-direction:row;
@@ -414,7 +414,7 @@ footer nav {
 
 footer .wrap {
 	background-image: url(faces-lower-bottom.jpg);
-	background-position: 0% 50%;
+	background-position: 0% 25%;
 	background-repeat: no-repeat;
 	bottom: 0;
 	position: absolute;
