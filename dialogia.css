@@ -542,6 +542,7 @@ html.ua-firefox footer .blur {
 		justify-content: space-evenly;
 	}
 	section.aletheia {
+		font-size:18px;
 		padding: 125px 10px;
 	}
 	iframe {
