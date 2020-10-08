@@ -291,6 +291,33 @@ background-color: rgba(0,0,0,.4);
 	height: 55px;
     width: 55px;
 }
+
+
+.icon.amazon {
+	background-image: url(icons/amazon.svg);
+	background-position: 0% 50%;
+	background-repeat: no-repeat;
+	display: block;
+	height: 55px;
+    width: 55px;
+}
+.icon.itunes {
+	background-image: url(icons/itunes.svg);
+	background-position: 0% 50%;
+	background-repeat: no-repeat;
+	display: block;
+	height: 55px;
+    width: 55px;
+}
+.icon.spotify {
+	background-image: url(icons/spotify.svg);
+	background-position: 0% 50%;
+	background-repeat: no-repeat;
+	display: block;
+	height: 55px;
+    width: 55px;
+}
+
 .arrow-up {
     border-left: 10px solid transparent;
 	border-right: 10px solid transparent;
