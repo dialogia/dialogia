@@ -546,6 +546,7 @@ html.ua-firefox footer .blur {
 	}
 	section.pics img {
 		flex-basis: calc(100%/3);
+		width:33%;
 	}
 	.artwork {
 		align-items:center;
